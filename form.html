@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>College Event Participation Form</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f0ebf8;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .container{
+        width: 60%;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        border-top: 10px solid #673ab7;
+    }
+
+    h1{
+        color: #673ab7;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    label{
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea{
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .r,
+    .c{
+        margin-top: 10px;
+    }
+
+    button{
+        margin-top: 20px;
+        background-color: #673ab7;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover{
+        background-color: #512da8;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>College Event Participation Form</h1>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Register Number</label>
+        <input type="text" placeholder="Enter register number">
+
+        <label>Department</label>
+        <select>
+            <option>Select Department</option>
+            <option>IT</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+        </select>
+
+        <label>Year of Study</label>
+        <div class="r">
+            <input type="radio" name="year"> I Year
+            <input type="radio" name="year"> II Year
+            <input type="radio" name="year"> III Year
+            <input type="radio" name="year"> IV Year
+        </div>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Events Interested</label>
+        <div class="c">
+            <input type="checkbox"> Paper Presentation <br><br>
+            <input type="checkbox"> Coding Contest <br><br>
+            <input type="checkbox"> Quiz Competition <br><br>
+            <input type="checkbox"> Poster Designing
+        </div>
+
+        <label>Additional Comments</label>
+        <textarea rows="4" placeholder="Enter your comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
